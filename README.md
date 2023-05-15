@@ -27,6 +27,15 @@ Escribir un método recursivo que calcule (y devuelva) la altura de un árbol bi
 Escribir un método recursivo que calcule (y devuelva) la suma de las hojas de un árbol binario de búsqueda.
 
 ### Ejercicio 5
+Escribir un método recursivo que calcule (y devuelva) la cantidad de nodos que son hojas de un árbol binario de búsqueda.
+
+### Ejercicio 6
+Escribir un método recursivo que calcule (y devuelva) la cantidad de nodos internos(que no son hojas ni raiz) de un árbol binario de búsqueda.
+
+### Ejercicio 7
+Escribir un método recursivo que calcule (y devuelva) la cantidad de nodos von valores pares e impares de un árbol binario de búsqueda.
+
+### Ejercicio 8
 Dada la siguiente lista de números realizar lo que se pide en cada ítem devolviendo el dibujo del árbol resultante:
 ###	4    19    -7    49    100    0    22    12
 #### Construir el árbol binario de búsqueda que resulta de insertar los números en el orden en que aparecen.
@@ -34,7 +43,7 @@ Dada la siguiente lista de números realizar lo que se pide en cada ítem devolv
     Tomar el árbol anterior y eliminar el elemento 49.
     Tomar el árbol anterior e insertar el elemento 1.
 
-### Ejercicio 6
+### Ejercicio 9
 Dada la siguiente lista de números realizar lo que se pide en cada ítem devolviendo el dibujo del árbol resultante:
 ###	23    7    41    26    32    52    11    5    56
 #### Construir el árbol binario de búsqueda que resulta de insertar los números en el orden en que aparecen.
@@ -42,8 +51,8 @@ Dada la siguiente lista de números realizar lo que se pide en cada ítem devolv
     Tomar el árbol anterior e insertar el elemento 9.
     Tomar el árbol anterior e insertar el elemento 28.
 
-### Ejercicio 7
+### Ejercicio 10
 Escribir una función recursiva en Java que reciba un árbol binario de enteros y devuelva true si posee cantidad par de nodos y false en caso contrario
 
-### Ejercicio 8
+### Ejercicio 11
 Implementar un TreeSet[T Ordered] a partir de un árbol binario de búsqueda
