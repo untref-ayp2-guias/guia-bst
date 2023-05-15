@@ -11,15 +11,39 @@ En la siguiente carpeta se encuentran los test del código suministrado en la cl
 
 ## Ejercicios
 
-En la carpeta `/ejercicios` encontrarás una implementacion de un binarytree para enteros que deberas usar para resolver los ejercicios
+En la carpeta `/ejercicios` encontrarás una implementacion de un binarysearchtree para enteros que deberas usar para resolver los ejercicios
 
 
 ### Ejercicio 1
-Escribir un método recursivo que recorra el árbol en PreOrder
+Escribir un método recursivo que recorra el árbol binario de búsqueda en PreOrder
 
 ### Ejercicio 2
-Escribir un método recursivo que recorra el árbol en PostOrder
+Escribir un método recursivo que recorra el árbol binario de búsqueda en PostOrder
 
 ### Ejercicio 3
-Escribir un método recursivo que calcule (y devuelva) la altura de un árbol. El método debe devolver -1 si el árbol está vacío, y 0 si solo contiene la raiz
+Escribir un método recursivo que calcule (y devuelva) la altura de un árbol binario de búsqueda. El método debe devolver -1 si el árbol está vacío, y 0 si solo contiene la raiz
 
+### Ejercicio 4
+Escribir un método recursivo que calcule (y devuelva) la suma de las hojas de un árbol binario de búsqueda.
+
+### Ejercicio 5
+Dada la siguiente lista de números realizar lo que se pide en cada ítem devolviendo el dibujo del árbol resultante:
+###	4    19    -7    49    100    0    22    12
+#### Construir el árbol binario de búsqueda que resulta de insertar los números en el orden en que aparecen.
+    Tomar el árbol anterior e insertar elemento 10.
+    Tomar el árbol anterior y eliminar el elemento 49.
+    Tomar el árbol anterior e insertar el elemento 1.
+
+### Ejercicio 6
+Dada la siguiente lista de números realizar lo que se pide en cada ítem devolviendo el dibujo del árbol resultante:
+###	23    7    41    26    32    52    11    5    56
+#### Construir el árbol binario de búsqueda que resulta de insertar los números en el orden en que aparecen.
+    Tomar el árbol anterior y eliminar el elemento 41.
+    Tomar el árbol anterior e insertar el elemento 9.
+    Tomar el árbol anterior e insertar el elemento 28.
+
+### Ejercicio 7
+Escribir una función recursiva en Java que reciba un árbol binario de enteros y devuelva true si posee cantidad par de nodos y false en caso contrario
+
+### Ejercicio 8
+Implementar un TreeSet[T Ordered] a partir de un árbol binario de búsqueda
