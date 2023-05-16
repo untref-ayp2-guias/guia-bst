@@ -72,7 +72,7 @@ func (bst *BinarySearchTree) FindMin() *BinaryNode {
 	if bst.root == nil {
 		return nil
 	}
-	nextLeft := bst.root.left
+	nextLeft := bst.root
 	for nextLeft.left != nil {
 		nextLeft = nextLeft.left
 	}
