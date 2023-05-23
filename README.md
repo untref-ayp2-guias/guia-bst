@@ -52,7 +52,7 @@ Dada la siguiente lista de números realizar lo que se pide en cada ítem devolv
     Tomar el árbol anterior e insertar el elemento 28.
 
 ### Ejercicio 10
-Escribir una función recursiva en Java que reciba un árbol binario de enteros y devuelva true si posee cantidad par de nodos y false en caso contrario
+Escribir una función recursiva que reciba un árbol binario de enteros y devuelva true si posee cantidad par de nodos y false en caso contrario
 
 ### Ejercicio 11
 Implementar un TreeSet[T Ordered] a partir de un árbol binario de búsqueda
