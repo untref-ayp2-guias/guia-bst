@@ -47,4 +47,6 @@ b. Construir el árbol binario de búsqueda que resulta de insertar los números
 Escribir una función recursiva que reciba un árbol binario de enteros y devuelva `true` si posee cantidad par de nodos y false en caso contrario
 
 ### Ejercicio 11
-Implementar un `TreeSet[T Ordered]` a partir de un árbol binario de búsqueda
+Implementar un `TreeSet[T types.Ordered]` a partir de un árbol binario de búsqueda. 
+El TDA TreeSet implementado debe cumplir con la interfaz Set (data-structures/set/Set.go) 
+Además, debe pasar sin modificaciones, todos los test que se adjuntan.
