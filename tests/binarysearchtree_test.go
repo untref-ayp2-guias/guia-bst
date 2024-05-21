@@ -1,19 +1,19 @@
 package tests
 
 import (
-	"guia13/binarysearchtree"
+	// bst ...
 	"testing"
 )
 
 func TestTamañoVacio(t *testing.T) {
-	bstree := binarysearchtree.NewBinarySearchTree[int]()
+	bstree := bst.NewBinarySearchTree[int]()
 	if bstree.Size() != 0 {
 		t.Errorf("Error el tamaño deberia dar %v, pero dio %v", 0, bstree.Size())
 	}
 }
 
 func TestTamañoDeSoloRaiz(t *testing.T) {
-	bstree := binarysearchtree.NewBinarySearchTree[int]()
+	bstree := bst.NewBinarySearchTree[int]()
 	bstree.Insert(4)
 	if bstree.Size() != 1 {
 		t.Errorf("Error el tamaño deberia dar %v, pero dio %v", 1, bstree.Size())
@@ -21,7 +21,7 @@ func TestTamañoDeSoloRaiz(t *testing.T) {
 }
 
 func TestTamañoDeSoloRaizConHijoIzquierdo(t *testing.T) {
-	bstree := binarysearchtree.NewBinarySearchTree[int]()
+	bstree := bst.NewBinarySearchTree[int]()
 	bstree.Insert(4)
 	bstree.Insert(2)
 	if bstree.Size() != 2 {
@@ -30,7 +30,7 @@ func TestTamañoDeSoloRaizConHijoIzquierdo(t *testing.T) {
 }
 
 func TestTamañoDeSoloRaizConHijoDerecho(t *testing.T) {
-	bstree := binarysearchtree.NewBinarySearchTree[int]()
+	bstree := bst.NewBinarySearchTree[int]()
 	bstree.Insert(4)
 	bstree.Insert(7)
 	if bstree.Size() != 2 {
@@ -39,7 +39,7 @@ func TestTamañoDeSoloRaizConHijoDerecho(t *testing.T) {
 }
 
 func TestTamañoDeRaizYAmbosHijos(t *testing.T) {
-	bstree := binarysearchtree.NewBinarySearchTree[int]()
+	bstree := bst.NewBinarySearchTree[int]()
 	bstree.Insert(4)
 	bstree.Insert(2)
 	bstree.Insert(7)
@@ -49,7 +49,7 @@ func TestTamañoDeRaizYAmbosHijos(t *testing.T) {
 }
 
 func TestRecorridoInOrder(t *testing.T) {
-	bstree := binarysearchtree.NewBinarySearchTree[int]()
+	bstree := bst.NewBinarySearchTree[int]()
 	bstree.Insert(4)
 	bstree.Insert(2)
 	bstree.Insert(7)
@@ -58,7 +58,7 @@ func TestRecorridoInOrder(t *testing.T) {
 	}
 }
 func TestRemoveRaiz(t *testing.T) {
-	bstree := binarysearchtree.NewBinarySearchTree[int]()
+	bstree := bst.NewBinarySearchTree[int]()
 	bstree.Insert(4)
 	bstree.Insert(2)
 	bstree.Insert(7)
