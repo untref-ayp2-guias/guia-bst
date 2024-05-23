@@ -27,18 +27,6 @@ func TestSecLargeElem(t *testing.T) {
 	bst.Insert(16)
 	bst.Insert(25)
 
-	// _, err := PredecesorInOrder(bst, 8)
-	// assert.EqualError(t, err, "No hay predecesores menores que el mínimo")
-	// p, _ := PredecesorInOrder(bst, 10)
-	// assert.Equal(t, 8, p)
-	// p, _ = PredecesorInOrder(bst, 12)
-	// assert.Equal(t, 10, p)
-	// p, _ = PredecesorInOrder(bst, 15)
-	// assert.Equal(t, 12, p)
-	// p, _ = PredecesorInOrder(bst, 16)
-	// assert.Equal(t, 15, p)
-	// p, _ = PredecesorInOrder(bst, 20)
-	// assert.Equal(t, 16, p)
 	p, _ := SecondLargestElement(bst)
 	assert.Equal(t, 20, p)
 }
