@@ -1,0 +1,60 @@
+name: Autograding Tests
+'on':
+- push
+- repository_dispatch
+permissions:
+  checks: write
+  actions: read
+  contents: read
+jobs:
+  run-autograding-tests:
+    runs-on: ubuntu-latest
+    if: github.actor != 'github-classroom[bot]'
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    - name: Ejercicio 01
+      id: ejercicio-01
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: Ejercicio 01
+        setup-command: ''
+        command: go test ./ejercicios/ej01SecondLargestElement_test.go ./ejercicios/ej01SecondLargestElement.go
+        timeout: 10
+        max-score: 1
+    - name: Ejercicio 02
+      id: ejercicio-02
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: Ejercicio 02
+        setup-command: ''
+        command: go test ./ejercicios/ej02PredecesorInOrder_test.go ./ejercicios/ej02PredecesorInOrder.go
+        timeout: 10
+        max-score: 1
+    - name: Ejercicio 03
+      id: ejercicio-03
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: Ejercicio 03
+        setup-command: ''
+        command: go test ./ejercicios/ej03IsBst_test.go ./ejercicios/ej03IsBst.go
+        timeout: 10
+        max-score: 1
+    - name: Ejercicio 04
+      id: ejercicio-04
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: Ejercicio 04
+        setup-command: ''
+        command: go test ./ejercicios/ej04TreeSet_test.go ./ejercicios/ej04TreeSet.go
+        timeout: 10
+        max-score: 1
+    - name: Autograding Reporter
+      uses: classroom-resources/autograding-grading-reporter@v1
+      env:
+        EJERCICIO-01_RESULTS: "${{steps.ejercicio-01.outputs.result}}"
+        EJERCICIO-02_RESULTS: "${{steps.ejercicio-02.outputs.result}}"
+        EJERCICIO-03_RESULTS: "${{steps.ejercicio-03.outputs.result}}"
+        EJERCICIO-04_RESULTS: "${{steps.ejercicio-04.outputs.result}}"
+      with:
+        runners: ejercicio-01,ejercicio-02,ejercicio-03,ejercicio-04
