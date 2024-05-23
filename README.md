@@ -1,30 +1,59 @@
 # Guía Binary Search Tree - Árboles Binarios de Búsqueda
 ## Ejercicios
 
-En la carpeta `/ejercicios` encontrarás una implementacion de un binarysearchtree para enteros que deberas usar para resolver los ejercicios
-
 ### Ejercicio 1
-Escribir un método recursivo que recorra el árbol binario de búsqueda en PreOrder
+Escribir una función que encuentre el segundo elemento mas grande en un BST.
+Example:
+
+```bash
+    Input: Root of below BST
+
+        10
+       /
+    5
+
+    Output:  5
+
+    Input: Root of below BST
+
+            10
+
+          /   \
+
+        5      20
+
+                 \ 
+
+                  30 
+
+    Output:  20
+```
 
 ### Ejercicio 2
-Escribir un método recursivo que recorra el árbol binario de búsqueda en PostOrder
+Escribir una funcion que dado un BST, encuentre el predecesor inorder de una clave dada. Si la clave no se encuentra en el BST, devuelve el nodo más grande anterior (si lo hay) presente en la BST. 
+
+```bash
+          15
+        /    \
+       /      \
+      10       20
+     / \      /  \
+    /   \    /    \
+   8    12  16    25
+
+    El predecesor de 8 no existe. 
+    El predecesor de 10 es 8 
+    El predecesor de 12 es 10 
+    El predecesor de 20 es 16  
+```
 
 ### Ejercicio 3
-Escribir un método recursivo que calcule (y devuelva) la altura de un árbol binario de búsqueda. El método debe devolver -1 si el árbol está vacío, y 0 si solo contiene la raiz
+Escribir una funcion para comprobar si un árbol binario es BST o no. Devuelve un booleano
 
 ### Ejercicio 4
-Escribir un método recursivo que calcule (y devuelva) la suma de las hojas de un árbol binario de búsqueda.
+Implementar un `TreeSet[T Ordered]` a partir de un árbol binario de búsqueda
 
 ### Ejercicio 5
-Escribir un método recursivo que calcule (y devuelva) la cantidad de nodos que son hojas de un árbol binario de búsqueda.
-
-### Ejercicio 6
-Escribir un método recursivo que calcule (y devuelva) la cantidad de nodos internos(que no son hojas ni raiz) de un árbol binario de búsqueda.
-
-### Ejercicio 7
-Escribir un método recursivo que calcule (y devuelva) la cantidad de nodos von valores pares e impares de un árbol binario de búsqueda.
-
-### Ejercicio 8
 a. Dada la siguiente lista de números realizar lo que se pide en cada ítem devolviendo el dibujo del árbol resultante:
 >	4    19    -7    49    100    0    22    12
 
@@ -33,7 +62,7 @@ b. Construir el árbol binario de búsqueda que resulta de insertar los números
 - Tomar el árbol anterior y eliminar el elemento 49.
 - Tomar el árbol anterior e insertar el elemento 1.
 
-### Ejercicio 9
+### Ejercicio 6
 a. Dada la siguiente lista de números realizar lo que se pide en cada ítem devolviendo el dibujo del árbol resultante:
 
 >	23    7    41    26    32    52    11    5    56
@@ -42,11 +71,3 @@ b. Construir el árbol binario de búsqueda que resulta de insertar los números
 - Tomar el árbol anterior y eliminar el elemento 41.
 - Tomar el árbol anterior e insertar el elemento 9.
 - Tomar el árbol anterior e insertar el elemento 28.
-
-### Ejercicio 10
-Escribir una función recursiva que reciba un árbol binario de enteros y devuelva `true` si posee cantidad par de nodos y false en caso contrario
-
-### Ejercicio 11
-Implementar un `TreeSet[T types.Ordered]` a partir de un árbol binario de búsqueda. 
-El TDA TreeSet implementado debe cumplir con la interfaz Set (data-structures/set/Set.go) 
-Además, debe pasar sin modificaciones, todos los test que se adjuntan.
